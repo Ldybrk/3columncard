@@ -17,21 +17,18 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
-  height: 50vh;
+  width: 70vw;
   padding: 0.5em;
   margin: 20vh auto 0;
 }
 .suv {
   background-color: hsl(184, 100%, 22%);
   color: hsla(0, 0%, 100%, 0.75);
-  height: 100%;
 }
 
 .sedans {
   background-color: hsl(31, 77%, 52%);
   color: hsla(0, 0%, 100%, 0.75);
-  height: 100%;
   border: none;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
@@ -39,7 +36,6 @@ html {
 .luxury {
   background-color: hsl(179, 100%, 13%);
   color: hsla(0, 0%, 100%, 0.75);
-  height: 100%;
   border: none;
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
@@ -68,6 +64,7 @@ html {
 .btnContainer {
   margin: auto;
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   padding-left: 2rem;
   width: 100%;
 }
@@ -129,11 +126,10 @@ html {
   border-color: white;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
   .container {
-    display: block;
-    width: 90vw;
-    height: 90vh;
+    display: flex;
+    flex-direction: column;
   }
 
   .sedans {
